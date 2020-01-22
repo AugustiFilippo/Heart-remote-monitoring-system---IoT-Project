@@ -1,0 +1,32 @@
+{
+	"WebServiceCatalog": "http://192.168.43.208:9090",
+	"device info": {
+		"Photopletysmography RaspberryPi": {
+			"deviceID": "PPG_RasPi1",
+			"PatientID": "PATIENT1",
+			"microservices": [
+				"PPG signal",
+				"Heart rate",
+				"Inter-beat-interval"
+			],
+			"sensors": {
+				"PPGsensor": {
+					"QoS": 2,
+					"resource": "Photoplethysmography",
+					"unit": "V"
+				}
+			}
+		}
+	},
+	"microservices offered": {
+		"PPG signal": {
+			"topic": "PATIENT1/PPGsensor/samples"
+		},
+		"Heart rate": {
+			"topic": "PATIENT1/PPGsensor/HR"
+		},
+		"Inter-beat-interval": {
+			"topic": "PATIENT1/PPGsensor/IBI"
+		}
+	}
+}
