@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Heart rate monitoring system through Photopletysmography </title>
+</head>
+
+<style>
+
+body {
+  background-image: url("../img/imgBG.jpg");
+  background-size: cover;
+}
+
+h1 {
+	color:darkblue;
+	font-family:verdana;
+	text-align:center;
+}
+
+p {
+	color:darkblue;
+	font-family:verdana;
+	text-align:center;
+}
+
+
+.mybutton {
+	background-color: lightblue; 
+	color: darkblue;
+	padding: 10px 32px;
+	text-align: center;
+	display: inline-block;
+	font-family:verdana;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+.mybutton:hover {
+  background-color: lightskyblue; 
+  color: white;
+ }
+ 
+.mybutton2 {
+	background-color: lightgrey; 
+	color: grey;
+	padding: 10px 32px;
+	text-align: center;
+	display: inline-block;
+	font-family:verdana;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: not-allowed;
+	border-radius: 12px;
+} 
+
+
+
+</style> 
+
+<body>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
+	<h1 style="text-align: center;"> Heart rate monitoring system</title>
+	
+	<p style="text-align: center;">
+		<input type="button" class = "mybutton" onclick="document.location.href='/TSupdateHR';" value= 'Update HR on Thingspeak'>
+		<input type="button" class = "mybutton2" onclick="document.location.href='/TSupdateIBI';" value= 'Update IBI on Thingspeak' disabled>
+	</p>
+	
+	
+	<p style="text-align: center;">
+		<input type="button" class = "mybutton" onclick="document.location.href='/stopTSAdaptor';" value= 'Stop updating Thingspeak'>
+	</p>
+	
+	
+	<p style="text-align: center;">
+		<a href="https://thingspeak.com/channels/914161" target = '_blank' class="mybutton">View timeline on ThingSpeak</a>
+	</p>	
+	
+
+		
+	<p style="text-align: center;">
+	<input type="button" class = "mybutton" onclick="document.location.href='/index';" value= 'Homepage'>
+	</p>
+	
+</body>
+
+</html>

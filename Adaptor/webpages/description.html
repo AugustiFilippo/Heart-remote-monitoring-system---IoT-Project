@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Heart rate monitoring system through Photopletysmography </title>
+</head>
+
+<style>
+body {
+  background-image: url("../img/imgBG3.jpg");
+  background-size: cover;
+}
+
+h1 {
+	color:darkblue;
+	font-family:verdana;
+	font-size: 28;
+	text-align:left;
+	margin-left: 20px; margin-top: 0px; margin-right: 500px; margin-bottom: 10px
+
+}
+
+p {
+	color:darkblue;
+	font-family:verdana;
+	text-align:left;
+	font-style: italic;	
+	margin-left: 30px; margin-top: 60px; margin-right: 700px; margin-bottom: 10px
+}
+
+ul {
+	color:darkblue;
+	font-family:verdana;
+	text-align:left;
+	font-style: italic;	
+	margin-left: 60px; margin-top: 30px; margin-right: 700px; margin-bottom: 10px
+
+}
+
+.mybutton {
+	background-color: lightblue; 
+	color: darkblue;
+	padding: 10px 32px;
+	text-align: center;
+	display: inline-block;
+	font-family:verdana;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+	margin-left: 180px;
+}
+
+.mybutton:hover {
+  background-color: lightskyblue; 
+  color: white;
+ }
+ 
+.mybutton2 {
+	background-color: lightgrey; 
+	color: grey;
+	padding: 10px 32px;
+	text-align: center;
+	display: inline-block;
+	font-family:verdana;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: not-allowed;
+	border-radius: 12px;
+} 
+
+
+</style> 
+
+<body>
+	<p>&nbsp;</p>
+	
+	<h1 style = "text-align: left"> Heart rate monitoring system</h1>
+		
+	<p>Heart rate monitoring system is an IoT platform that allow any user, <br>
+	from any part of the world, to real- time monitor the health status <br>
+	of a patient that is in possession of the Photopletysmographic sensor device.<br>
+	<br>
+	The Photopletysmographic sensor device is based on a RaspberryPi, <br>
+	which everytime is powered starts to acquire the signal from the<br> 
+	Photopletysmographic (PPG) sensor and offers the folloing services, <br>
+	that can be triggered from this website:
+	<ul>
+        <li>Upload data on ThingSpeak </li>
+        <li>View the PPG signal acquisition in real-time</li>
+        <li>View the ThingSpeak data updated</li>
+    </ul>
+	
+	
+	
+	</p>
+	<p style="text-align: left;">
+	<input type="button" class = "mybutton" onclick="document.location.href='/index';" value= 'Homepage'>
+	</p>
+	
+</body>
+
+</html>
