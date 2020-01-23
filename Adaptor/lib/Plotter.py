@@ -1,23 +1,23 @@
 import matplotlib.pyplot as plt
 import os
 import time
-import ../lib/TSAMyMQTT as TSMQ
-import ../lib.GetDataFromCatalog as GDFC
+import TSAMyMQTT as TSMQ
+import GetDataFromCatalog as GDFC
 import json
 # plt.ion()
 
 class myPlotter(object):
 	
 	def __init__(self):
-		self.figPath = '\data\PlotData'
-		self.figFilename = '\plotPPG.txt'
-		self.timeArrayName = '\plotPPGTime.txt'
+		self.figPath = './data/PlotData'
+		self.figFilename = '/plotPPG.txt'
+		self.timeArrayName = '/plotPPGTime.txt'
 		self.currDir = os.getcwd()
 		
 		
 	def myOpen(self):
 
-		f = open((self.currDir + self.figPath + self.figFilename),'r')
+		f = open((self.figPath + self.figFilename),'r')
 		self.PPGSignal = f.read()[1:-1]
 		self.PPGSignal = self.PPGSignal.split(',')
 		self.PPGSignal = [ int(x) for x in self.PPGSignal]
