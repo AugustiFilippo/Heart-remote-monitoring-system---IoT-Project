@@ -14,7 +14,7 @@
 			}
 		},
 		"PPG signal": {
-			"topic": "/PPGsamples"
+			"topic": "/samples"
 		},
 		"Heart rate": {
 			"topic": "/HR"
@@ -44,7 +44,7 @@
 	},
 	"Patients": {
 		"PATIENT1": {
-			"samples": "PATIENT1/PPGsensor/samples",
+			"PPG samples": "PATIENT1/PPGsensor/samples",
 			"Heart rate": "PATIENT1/PPGsensor/HR",
 			"Inter-beat-interval": "PATIENT1/PPGsensor/IBI",
 			"ThingSpeak API KEY": "3D6IWTOKW85JGEWX",
